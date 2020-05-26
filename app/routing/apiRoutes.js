@@ -10,21 +10,16 @@ module.exports = function (app) {
 
     // A POST routes /api/friends. This will be used to handle incoming survey results. This route will also be used to handle the compatibility logic
     app.post("/api/friends", function (req, res) {
-        
-/*         var newReservation = req.body;
-        if (reservations.length < 5) {
+
+        var newFriend = req.body;
+        if (reservations.length) {
             reservations.push(newReservation);
 
             res.json(newReservation);
             console.log('added to reservations');
-        } else {
-            waitlist.push(newReservation);
-
-            res.json(newReservation);
-            console.log('added to waitlist');
         }
 
-        console.log(newReservation); */
+        console.log(newReservation);
     });
 
 };

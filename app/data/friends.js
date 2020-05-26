@@ -31,3 +31,6 @@ var characters =
         1
     ]
 }]
+
+
+module.exports = friends;

@@ -6,11 +6,11 @@ var characters =
         5,
         1,
         4,
-        4,
-        5,
+        3,
+        1,
         1,
         2,
-        5,
+        2,
         4,
         1
     ]
@@ -33,4 +33,4 @@ var characters =
 }]
 
 
-module.exports = friends;
+module.exports = characters;

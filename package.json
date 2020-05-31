@@ -14,5 +14,13 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcelis025/FriendFinder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mcelis025/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/mcelis025/FriendFinder#readme"
 }

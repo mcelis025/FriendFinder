@@ -18,13 +18,13 @@ module.exports = function (app) {
         for (var i = 0; i < friends.length; i++) {
             var totalDifference = 0;
 
-            for (var j = 0; j < friends[i].score.length; j++) {
-                totalDifference += Math.abs(req.body.score[j] - friends[i].score[j]);
+            for (var j = 0; j < friends[i].scores.length; j++) {
+                totalDifference += Math.abs(req.body.scores[j] - friends[i].scores[j]);
             }
             points.push(totalDifference);
         }
 
-        for (var k = 1; k < scores.length; k++) {
+        for (var k = 1; k < points.length; k++) {
             if (points[k] < low) {
                 ind = k;
                 low = points[k];

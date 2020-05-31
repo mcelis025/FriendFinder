@@ -12,24 +12,25 @@ module.exports = function (app) {
     app.post("/api/friends", function (req, res) {
 
         var points = [];
-        var ind = 0;
-        var low = points[0];
 
         for (var i = 0; i < friends.length; i++) {
             var totalDifference = 0;
 
             for (var j = 0; j < friends[i].scores.length; j++) {
                 totalDifference += Math.abs(req.body.scores[j] - friends[i].scores[j]);
-            }
+            };
             points.push(totalDifference);
-        }
+        };
+
+        var ind = 0;
+        var low = points[0];
 
         for (var k = 1; k < points.length; k++) {
             if (points[k] < low) {
                 ind = k;
                 low = points[k];
-            }
-        }
+            };
+        };
 
         friends.push(req.body);
 

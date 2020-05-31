@@ -16,12 +16,12 @@ module.exports = function (app) {
         var low = points[0];
 
         for (var i = 0; i < friends.length; i++) {
-            var total = 0;
+            var totalDifference = 0;
 
             for (var j = 0; j < friends[i].score.length; j++) {
-                total += Math.abs(req.body.score[j] - friends[i].score[j]);
+                totalDifference += Math.abs(req.body.score[j] - friends[i].score[j]);
             }
-            points.push(total);
+            points.push(totalDifference);
         }
 
         for (var k = 1; k < scores.length; k++) {

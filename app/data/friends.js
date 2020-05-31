@@ -1,4 +1,4 @@
-var characters =
+var friends =
 [{
     "name": "Darth Vader",
     "photo": "https://lumiere-a.akamaihd.net/v1/images/Darth-Vader_6bda9114.jpeg?region=0%2C34%2C1400%2C699",
@@ -33,4 +33,4 @@ var characters =
 }]
 
 
-module.exports = characters;
+module.exports = friends;
